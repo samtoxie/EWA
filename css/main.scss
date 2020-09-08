@@ -1,0 +1,100 @@
+$theme-colors: ("primary": #f55a42,
+);
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// General settings
+
+body {
+    background-color: whitesmoke;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    color: whitesmoke;
+}
+
+
+
+// Navbar
+
+#navigation div {
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+}
+
+.navbar-item {
+    padding: 0;
+}
+
+// Topbar
+
+#topbar {
+    height: 2.5em;
+}
+
+#topbar span {
+    color: whitesmoke;
+    font-size: 1.7em;
+    text-align: center;
+}
+
+.topbar-div div {
+    display: grid;
+}
+
+// Taken
+
+#tasks {
+    margin-top: 2.5em;
+    margin-bottom: 4em;
+}
+
+.task-item {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr;
+    gap: 1px 1px;
+    grid-template-areas:
+        "status info";
+    padding: 0;
+    padding-top: 0.7em;
+    padding-bottom: 0.7em;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+.status {
+    grid-area: status;
+    display: grid;
+}
+
+.status span {
+    font-size: 3em;
+    margin: auto;
+}
+
+.info {
+    grid-area: info;
+}
+
+.task-title {
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.task-deadline {
+
+}
+
+.task-icon-green {
+    color: var(--success);
+}
+
+.task-icon-yellow {
+    color: var(--warning);
+}
+
+.task-icon-red {
+    color: var(--danger);
+}

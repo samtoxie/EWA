@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrandAware</title>
+
+    <!-- CSS only -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined"
+      rel="stylesheet">
+    <link rel="stylesheet" href="css/dist/main.css">
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <!-- Navigation -->
+    <section class="container-fluid bg-primary fixed-bottom" id="navigation">
+      <div class="row">
+          <div class="col-3 text-center navbar-item my-auto">
+            <a href="#"><span class="material-icons-outlined">assignment</span><br>Taken</a>
+          </div>
+          <div class="col-3 text-center navbar-item">
+            <a href="#"><span class="material-icons-outlined">announcement</span><br>Berichten</a>
+          </div>
+          <div class="col-3 text-center navbar-item">
+            <a href="#"><span class="material-icons-outlined">local_post_office</span><br>Orders</a>
+          </div>
+          <div class="col-3 text-center navbar-item">
+            <a href="#"><span class="material-icons-outlined">contact_phone</span><br>Contacten</a>
+          </div>
+      </div>
+    </section>
+    <!-- Topbar -->
+    <section class="container-fluid bg-primary fixed-top" id="topbar">
+      <div class="row topbar-div">
+        <div class="col-3">
+          <span class="material-icons m-auto">add_circle_outline</span>
+        </div>
+        <div class="col-6">
+          <span class="m-auto">Taken</span>
+        </div>
+        <div class="col-3">
+          <span class="material-icons-outlined m-auto">date_range</span>
+        </div>
+      </div>
+    </section>
+    <!-- Taken -->
+    <section class="container-fluid" id="tasks">
+      <div class="row">
+        <div class="task-item col-12">
+          <div class="status task-icon-red"><span class="material-icons">error</span></div>
+          <div class="info"><text class="task-title">Restaurantronde</text><br><text class="task-deadline">08/09/2020 - 14:00</text></div>
+        </div>
+        <div class="task-item col-12">
+          <div class="status task-icon-yellow"><span class="material-icons">error_outline</span></div>
+          <div class="info"><text class="task-title">Inventarisatie menukaarten</text><br><text class="task-deadline">08/09/2020 - 16:00</text></div>
+        </div>
+        <div class="task-item col-12">
+          <div class="status task-icon-yellow"><span class="material-icons">error_outline</span></div>
+          <div class="info"><text class="task-title">Schoonmaken Pinterminals</text><br><text class="task-deadline">08/09/2020 - 16:00</text></div>
+        </div>
+        <div class="task-item col-12">
+          <div class="status task-icon-green"><span class="material-icons">schedule</span></div>
+          <div class="info"><text class="task-title">Einde Dagcheck</text><br><text class="task-deadline">08/09/2020 - 24:00</text></div>
+        </div>
+        <div class="task-item col-12">
+          <div class="status task-icon-green"><span class="material-icons">schedule</span></div>
+          <div class="info"><text class="task-title">Controleren Orders</text><br><text class="task-deadline">08/10/2020 - 12:00</text></div>
+        </div>
+        <div class="task-item col-12">
+          <div class="status task-icon-green"><span class="material-icons-outlined">new_releases</span></div>
+          <div class="info"><text class="task-title">Keuken schoonmaken</text><br><text class="task-deadline">08/11/2020 - 14:00</text></div>
+        </div>
+        <div class="task-item col-12">
+          <div class="status task-icon-green"><span class="material-icons-outlined">new_releases</span></div>
+          <div class="info"><text class="task-title">Bar schoonmaken</text><br><text class="task-deadline">08/11/2020 - 16:00</text></div>
+        </div>
+        <div class="task-item col-12">
+          <div class="status task-icon-green"><span class="material-icons-outlined">new_releases</span></div>
+          <div class="info"><text class="task-title">Telefonische Vergadering</text><br><text class="task-deadline">08/12/2020 - 12:00</text></div>
+        </div>
+      </div>
+    </section>
+</body>
+
+</html>
