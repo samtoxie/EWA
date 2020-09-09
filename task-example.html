@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrandAware</title>
+
+    <!-- CSS only -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="css/dist/main.css">
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <section class="container-fluid bg-primary fixed-bottom" id="navigation">
+        <div class="row">
+            <div class="col-3 text-center navbar-item my-auto">
+                <a href="tasks.html"><span class="material-icons-outlined">assignment</span><br>Taken</a>
+            </div>
+            <div class="col-3 text-center navbar-item">
+                <a href="#"><span class="material-icons-outlined">announcement</span><br>Berichten</a>
+            </div>
+            <div class="col-3 text-center navbar-item">
+                <a href="#"><span class="material-icons-outlined">local_post_office</span><br>Orders</a>
+            </div>
+            <div class="col-3 text-center navbar-item">
+                <a href="#"><span class="material-icons-outlined">contact_phone</span><br>Contacten</a>
+            </div>
+        </div>
+    </section>
+    <!-- Topbar -->
+    <section class="container-fluid bg-primary fixed-top" id="topbar">
+        <div class="row topbar-div">
+            <div class="col-3 c-pointer" onclick="window.location.href = 'tasks.html'">
+                <span class="material-icons-outlined m-auto">backspace</span>
+            </div>
+            <div class="col-6">
+                <span class="m-auto">Taak</span>
+            </div>
+            <div class="col-3">
+                <span class="material-icons-outlined m-auto">remove_circle_outline</span>
+            </div>
+        </div>
+    </section>
+    <!-- Taak -->
+    <section class="container-fluid" id="tasks">
+        <div class="row">
+            <div class="col-12 task-info">
+                <span>
+                    <h4 class="title">Restaurantronde</h4>
+                    <p class="description">Deze taak dient als checklist om te zorgen dat het restaurant er volgens de
+                        geldende normen uitziet.</p>
+                    <p class="subtitle">Deadline: 08/09/2020 - 14:00</p>
+                </span>
+            </div>
+            <div class="col-12 task-action">
+                <p class="action-title">Zijn de tafels netjes?</p>
+                <div class="picture-action">
+                    <div class="picture-text">
+                        Maak een foto...
+                    </div>
+                    <div class="picture-button">
+                        <span class="material-icons">
+                            camera_alt
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 task-action">
+                <p class="action-title">Maak een foto van het menubord</p>
+                <div class="picture-action">
+                    <div class="picture-text">
+                        <img src="img/example.jpg" />
+                    </div>
+                    <div class="picture-button">
+                        <span class="material-icons">
+                            camera_alt
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 task-action">
+                <p class="action-title">Hoeveel reserveringen zijn er beschikbaar?</p>
+                <div class="text-action">
+                    <input placeholder="Vul hier het antwoord in..."></input>
+                </div>
+            </div>
+            <div class="col-12 task-action">
+                <p class="action-title">Is het restaurant schoon?</p>
+                <div class="choice-action">
+                    <select>
+                        <option hidden disabled selected value> -- Kies een optie -- </option>
+                        <option>Ja</option>
+                        <option>Nee</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-12 task-action">
+                <p class="action-title">Opmerkingen:</p>
+                <div class="text-action">
+                    <textarea placeholder="Hier kun je eventueel een opmerking achterlaten..."></textarea>
+                </div>
+            </div>
+    </section>
+</body>
+
+</html>
